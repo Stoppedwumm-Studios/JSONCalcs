@@ -12,8 +12,4 @@ python app.py
 ```
 
 ## Open files
-Set the python script to open .jsoncalcs or put the Filepath in the command
-
-```bash
-python app.py CUSTOM-FILE
-```
+Download the batch file, then put it in the same path as your python script and set .jsoncalcs to open with that batch file

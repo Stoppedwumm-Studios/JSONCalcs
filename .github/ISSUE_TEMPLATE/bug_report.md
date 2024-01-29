@@ -30,4 +30,4 @@ If applicable, add screenshots to help explain your problem.
 **Additional context**
 Add any other context about the problem here.
 
-[ ] I agree that I will be banned if this report is not matching our guidelines
+- [ ] I agree that I will be banned if this report is not matching our guidelines

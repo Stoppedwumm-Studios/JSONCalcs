@@ -10,3 +10,10 @@ Open your cmd (Windows + R, then type cmd.exe and press enter) or Terminal, then
 ```bash
 python app.py
 ```
+
+## Open files
+Set the python script to open .jsoncalcs or put the Filepath in the command
+
+```bash
+python app.py CUSTOM-FILE
+```

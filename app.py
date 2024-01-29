@@ -3,6 +3,18 @@ import os
 
 filename = "calcs.jsoncalcs"
 
+import sys
+
+if len(sys.argv) == 1:
+    maybefilename = input("Filename (leave empty for standard): ")
+
+    if maybefilename == "":
+        print("Using normal filename")
+    else:
+        filename = str(maybefilename) + ".jsoncalcs"
+else:
+    filename = sys.argv[1]
+    
 def LoadFile():
     if os.path.exists(filename):
         with open(filename, 'r') as openfile:
@@ -47,12 +59,7 @@ def LoadCalc(name, variables):
     calculationStr = dictionary[name]["calculation"]
     exec(variables + "\nprint(" + str(calculationStr) + ")")
 
-maybefilename = input("Filename (leave empty for standard): ")
 
-if maybefilename == "":
-    print("Using normal filename")
-else:
-    filename = str(maybefilename) + ".jsoncalcs"
 while True:
     method = AskMethod()
 

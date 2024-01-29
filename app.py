@@ -13,7 +13,13 @@ if len(sys.argv) == 1:
     else:
         filename = str(maybefilename) + ".jsoncalcs"
 else:
-    filename = sys.argv[1]
+    if sys.argv[1] == "":
+        print("Opened without file via batch")
+    else:
+        filename = sys.argv[1]
+        print(sys.argv[1])
+        print("[INFO] Opened file opened with argument/batch file")
+    
     
 def LoadFile():
     if os.path.exists(filename):

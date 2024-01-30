@@ -15,6 +15,12 @@ if len(sys.argv) == 1:
 else:
     if sys.argv[1] == "":
         print("Opened without file via batch")
+        maybefilename = input("Filename (leave empty for standard): ")
+
+        if maybefilename == "":
+            print("Using normal filename")
+        else:
+            filename = str(maybefilename) + ".jsoncalcs"
     else:
         filename = sys.argv[1]
         print(sys.argv[1])

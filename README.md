@@ -12,4 +12,4 @@ python app.py
 ```
 
 ## Open files
-Download the batch file, then put it in the same path as your python script and set .jsoncalcs to open with that batch file
+Download the launcher.bat batch file, then put it in the same path as your python script and set .jsoncalcs to open with the launcher
